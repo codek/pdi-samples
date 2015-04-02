@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>outliers</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+        <partitionschema>
+          <name>dynamic</name>
+          <dynamic>Y</dynamic>
+          <partitions_per_slave>1</partitions_per_slave>
+        </partitionschema>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2013&#x2f;12&#x2f;18 15&#x3a;14&#x3a;14.091</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2013&#x2f;12&#x2f;18 15&#x3a;14&#x3a;14.091</modified_date>
+  </info>
+  <notepads>
+    <notepad>
+      <note>This sample demonstrates processing a single incoming data stream &#x28;pendigits data&#x29;,&#xd;&#xa;batches of 1000 rows are pushed into R as and assigned to the variable &#x22;frame1&#x22;&#x3b;&#xd;&#xa;a PCA is then computed and the rotated data is output.</note>
+      <xloc>46</xloc>
+      <yloc>41</yloc>
+      <width>628</width>
+      <heigth>67</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <order>
+  <hop> <from>R script executor</from><to>Dummy &#x28;do nothing&#x29;</to><enabled>Y</enabled> </hop>
+  <hop> <from>CSV file input</from><to>R script executor</to><enabled>N</enabled> </hop>
+  </order>
+  <step>
+    <name>CSV file input</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x2f;pendigits.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>&#x22;</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>N</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding/>
+    <fields>
+      <field>
+        <name>input1</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input2</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input3</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input4</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input5</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input6</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input7</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input8</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input9</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input10</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input11</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input12</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input13</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input14</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input15</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>input16</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>class</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>126</xloc>
+      <yloc>157</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29;</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>474</xloc>
+      <yloc>157</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>R script executor</name>
+    <type>RScriptExcecutor</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<rows_to_process>All</rows_to_process>
+<rows_to_process_size/>
+<reservoir_sampling>Y</reservoir_sampling>
+<reservoir_sampling_size>1000</reservoir_sampling_size>
+<random_seed>1</random_seed>
+<output_is_raw_text>N</output_is_raw_text>
+<strings_as_factors>Y</strings_as_factors>
+<include_input_as_output>N</include_input_as_output>
+<script>&#x23;frame1&#xa;&#x23;df &#x3c;- subset&#x28;frame1, select &#x3d; -c&#x28;class&#x29; &#x29;&#xa;&#xa;&#x23;PCA analysis&#xa;&#x23;pca1 &#x3d; prcomp&#x28;df, scale. &#x3d; TRUE&#x29;&#xa;&#x23;df2 &#x3d; as.data.frame&#x28;pca1&#x24;x&#x29;&#xa;&#x23;df2&#xa;&#xa;library&#x28;AnomalyDetection&#x29;&#xa;data&#x28;raw_data&#x29;&#xa;res &#x3d; AnomalyDetectionTs&#x28;raw_data, max_anoms&#x3d;0.02, direction&#x3d;&#x27;both&#x27;, plot&#x3d;FALSE&#x29;&#xa;oput &#x3d; as.data.frame&#x28;res&#x24;anoms&#x29;&#xa;oput&#xa;</script>
+<r_log_level>Debug</r_log_level>
+<load_r_script_at_runtime>N</load_r_script_at_runtime>
+<r_script_to_load/>
+   <frame_names>
+    </frame_names>
+   <incoming_step_names>
+   </incoming_step_names>
+   <output_fields>
+        <out_field>
+            <field_name>timestamp</field_name>
+
+            <type>String</type>
+        </out_field>
+        <out_field>
+            <field_name>anoms</field_name>
+
+            <type>Number</type>
+        </out_field>
+    </output_fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>280</xloc>
+      <yloc>157</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+<attributes><group><name>DataService</name>
+</group></attributes>
+
+</transformation>
